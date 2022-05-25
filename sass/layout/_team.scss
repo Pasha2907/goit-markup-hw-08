@@ -1,0 +1,126 @@
+.team{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--second-background-color);
+
+    @include desktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.team__list{
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.team__item{
+    @media screen and (max-width:767.5px) {
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+    
+
+    @include tablet{
+        width: calc((100% - 30px*2)/2);
+        margin: 15px;
+    }
+
+    @include desktop{
+        width: calc((100% - 30px*4)/4);
+    }
+
+    // .team__list & + &{
+    //     margin-left: 30px;
+    // }
+
+    & > .member{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+        background-color: var(--third-background-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;    
+    }
+}
+
+.team__title{
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+
+    @include desktop{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+.member__subtitle{
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.member__text{
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.member__soc-list{
+    display: flex;
+    justify-content: center;
+}
+
+.member__soc-item{
+    & + &{
+        margin-left: 10px;
+    }
+}
+
+.member__soc-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    transition: 
+        color 250ms var(--timing--function),
+        background-color 250ms var(--timing--function);
+
+    background-color: var(--third-background-color);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-svg-color);
+
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+    color: var(--second-svg-color);
+    }
+}
+
+.member__soc-icon{
+    fill: currentColor;
+}
