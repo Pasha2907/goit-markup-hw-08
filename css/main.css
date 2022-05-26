@@ -277,6 +277,12 @@ body {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .contact__icon {
   margin-right: 10px;
@@ -399,6 +405,7 @@ body {
 }
 
 .hero {
+  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
   padding-top: 118px;
@@ -426,6 +433,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg.jpg);
@@ -471,6 +479,12 @@ body {
 .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -980,7 +994,6 @@ body {
 
 .modal {
   width: 450px;
-  min-height: 609px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -989,6 +1002,11 @@ body {
   border-radius: 4px;
   background-color: var(--third-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 479.9px) {
+  .modal {
+    width: 90%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1022,6 +1040,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+}
+@media screen and (max-width: 479.9px) {
+  .modal__title {
+    font-size: 17px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
@@ -1064,6 +1087,11 @@ body {
 .modal__input:hover + .modal__icon, .modal__input:focus + .modal__icon {
   fill: var(--accent-color);
 }
+@media screen and (max-width: 479.9px) {
+  .modal__input {
+    height: 35px;
+  }
+}
 
 .modal__input-wrap {
   position: relative;
@@ -1096,6 +1124,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (max-width: 479.9px) {
+  .modal__text {
+    height: 100px;
+  }
 }
 
 .modal__lable-check {

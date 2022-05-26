@@ -13,7 +13,7 @@
 
 .modal{
     width: 450px;
-    min-height: 609px;
+    // min-height: 609px;
     padding: 40px;
 
     position: absolute;
@@ -27,6 +27,10 @@
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        @media screen and (max-width: 479.9px){
+            width: 90%;
+        }
 
         @include desktop{
             width: 528px;
@@ -65,6 +69,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+
+    @media screen and (max-width: 479.9px){
+        font-size: 17px;
+    }
 
     @include desktop{
         line-height: 1.15;
@@ -114,6 +122,10 @@
     &:focus + .modal__icon{
         fill: var(--accent-color);
     }
+
+    @media screen and (max-width: 479.9px){
+        height: 35px;
+    }
 }
 
 .modal__input-wrap{
@@ -152,6 +164,10 @@
         line-height: 1.17;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
+    }
+
+    @media screen and (max-width: 479.9px){
+        height: 100px;
     }
 }
 

@@ -1,4 +1,5 @@
 .hero{
+    max-width: 1600px;
     margin: 0 auto;
     text-align: center;
     padding-top: 118px;
@@ -44,6 +45,7 @@
     }
     
     @include desktop{
+        height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: 

@@ -2,6 +2,7 @@
     @include tablet{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: -15px;
     }
 }
