@@ -412,6 +412,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .hero-porfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .class {
   margin-bottom: 40px;
@@ -429,8 +435,12 @@ body {
 
 .class__list {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -15px;
+}
+@media screen and (max-width: 767.5px) {
+  .class__list {
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .class__list {
